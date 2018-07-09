@@ -1,0 +1,68 @@
+
+.header1 {
+    font-family: "PT Sans",sans-serif;
+    font-size: 4.4em;
+}
+
+h2 {
+    font-size: 3em;
+    font-family: "PT Sans",sans-serif;
+}
+
+
+h3 {
+    font-family: "Optima", sans-serif;
+    font-size: 3em;
+}
+
+h4 {
+    font-size: 2em;
+    font-family: "PT Sans",sans-serif;
+}
+
+.dynamic-content{
+    display: none;
+}
+
+.roomRow {
+    margin-bottom: 15px;
+    border-color: #ADD8E6;
+    border-style: solid;
+    border-radius: 8px;
+    background: #EFEFFF;
+}
+
+
+.img-circle{
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.departmentBox {
+    border-color: #FFBF00;
+    border-style: solid;
+    font-size: 2.2em;
+    font-family: "Optima" ,sans-serif;
+}
+
+.alt-display {
+    background: #FFBF00;
+    margin-top: 30px;
+}
+
+.alt-text {
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+}
+
+.alt-image {
+    margin-top: 30px;
+}
+
+.image{
+    position: relative;
+}

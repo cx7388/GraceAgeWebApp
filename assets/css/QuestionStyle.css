@@ -1,0 +1,115 @@
+/* 12 column grid layout*/
+* {
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.container {
+    position: relative;
+    width: 100%;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+/*Text font, size*/
+h3{
+    font-family: "Julius Sans One";
+    font-size: 3em;
+}
+h4{
+    font-family: "Julius Sans One";
+    font-size: 2.25em;
+    color: #FFFFFF;
+}
+
+/*Element color, border, position, size, font*/
+.GABar{
+    background-color: #0288D1;
+    height: 8.33%;
+    width: 100%;
+}
+img.exitIcon{
+    height: 80%;
+    width: 80%;
+}
+img.logo{
+    width: 100% ;
+    height: 34.7% ;
+}
+
+.Question{
+    position: relative;
+    
+}
+.possibleAnswers{
+    height:38.2%;
+}
+li{
+    list-style-type: none;
+    font: "Pontano Sans";
+    font-size: 2.25em;
+}
+button.anAnswer{
+    background-color: #FFFFFF;
+    
+    border-color: #FFBF00;
+    border-style: solid;
+    
+    position: relative;
+    height: 27.27%;
+    width: 33.33%;
+    margin: auto;    
+    display: block;
+    
+    font: "Pontano Sans";
+    font-size: 1.6em;
+    font-style: normal;
+    text-align: center;
+}
+button.prevQuestion{
+    background-color: #FFFFFF;
+    
+    border-color: #ADD8E6;
+    border-style: solid;
+    
+    position: absolute;
+    left: 0px;
+    height: 26%;
+    width: 12.5%;
+    
+    font: "Pontano Sans";
+    font-size: 1.833em;    
+}
+button.pauseSurvey{
+    background-color: #FFFFFF;
+    
+    border-color: #ADD8E6;
+    border-style: solid;
+    
+    position: absolute;
+    right: 0px;
+    height: 26%; 
+    width: 12.5%;  
+    
+    font: "Pontano Sans";
+    font-size: 1.833em;
+}
+
+

@@ -1,0 +1,80 @@
+h4 {
+    font-family: "PT Sans",sans-serif;
+    font-size: 3em;
+}
+h5 {
+    font-family: "PT Sans",sans-serif;
+    font-size: 1.5em;
+}
+
+.infoBox{;
+    background-color: #FFFFFF;
+    font-family: "PT Sans",sans-serif;
+    margin-left:-15px;
+}
+.noteGrid{
+    display:grid;
+    grid-template-columns:62% 38%;
+    font-family: "PT Sans",sans-serif;
+    margin-top:5px;
+}
+.selectBox{
+    overflow-y: scroll;
+    overflow-x:hidden;
+    height: 300px;
+    font-family: "PT Sans",sans-serif;
+    background-color: #FFFFFF;    
+    margin-left:-15px;
+    }
+.noteBox{
+    overflow-y: scroll;
+    overflow-x:hidden;
+    height: 180px;
+    font-family: "PT Sans",sans-serif;
+    background-color: #FFFFFF;    
+    margin-left:-15px;
+    }
+.noteButton{
+    border : 2px solid #0288D1;
+    background-color: #FFFFFF;
+    border-radius:2;
+    font-family: "PT Sans",sans-serif;
+    width:140px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+.surveyElement{
+    border : 2px solid #0288D1;
+    background-color: #FFFFFF;
+    border-radius:2;
+    font-family: "PT Sans",sans-serif;
+    padding: 10px;
+    margin: 5px;
+}
+
+#middle{
+    align-content: center;
+    padding-top:10px;
+    font-family: "PT Sans",sans-serif;
+}
+
+li {
+    padding-top: 10px;
+    list-style-type: none;
+    width:600px;
+    font-family: "PT Sans",sans-serif;
+}
+.button 
+{
+    display:inline-block;
+    color:#444;
+    border:1px solid #CCC;
+    background:#DDD;
+    box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+    cursor:pointer;
+    vertical-align:middle;
+    max-width: 100px;
+    padding: 5px;
+    text-align: center;
+}

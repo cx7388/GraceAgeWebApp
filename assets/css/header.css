@@ -1,0 +1,46 @@
+.nav_custome{
+    background-color: #03A9F4;
+    font-family: 'PT Sans', sans-serif;
+    height:52px; width:100%;  
+    
+    padding-top: 8px;
+}
+
+.a_custome{
+    width:80px;
+    font-size: 1em;
+}
+
+.li_custome{
+   font-size: 1em; 
+   text-align: right; 
+}
+
+
+.fontsize{
+    font-size: 1.5em; 
+}
+.fontsize2{
+    font-size: 1.6vw;
+}
+.navbar-nav a:hover{
+    background-color: #029ce3;
+}
+
+body{
+    padding-top: 50px;
+}
+.navbar-text {
+    color: white;
+    margin:auto; 
+    width:60%;
+    font-size: 2.2em;
+    font-family: 'PT Sans', sans-serif;
+    color:white;
+    text-align: center;
+    padding-top: 0px;
+}
+
+.nav-link{
+    background-color: #03A9F4;
+}

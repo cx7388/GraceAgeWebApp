@@ -1,0 +1,373 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+
+/* 
+    Created on : Nov 1, 2017, 8:58:36 PM
+    Author     : River
+*/
+
+.layout(@direction) {
+    display: flex;
+    flex-direction: @direction;
+}
+
+body {
+    .layout(column);
+}
+
+main {
+    margin-top:5%;
+    max-height: 700px;
+    height: 100%;
+    .layout(row);
+    font-family: 'Optima', sans-serif;
+}
+
+#box2 {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    /*this will cause the div to be in the center*/
+    left: 0;
+    margin-top: 2%;
+    margin-right: 2%;
+    max-height: 50px;
+    height: auto;
+}
+
+#overlay2 {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 25%;
+    z-index: 1;
+    color: rgba(188, 143, 143, 0.2);
+    font-size: 50px;
+    font-style: bold;
+    text-align: center;
+    line-height: 50px; //box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    color: white; //border-radius: 25px;
+    font-size: 2vw;
+    background: rgba(190, 190, 190, 0.7);
+}
+
+.container {
+    position: absolute;
+    height: auto;
+    left: 7.5%;
+    top: 20%;
+    transition: 0.3s;
+}
+
+.container1 {
+    position: relative;
+    margin-top: 5%;
+    width: 33%;
+}
+
+.image1 {
+    opacity: 1;
+    display: block;
+    max-width: 565px;
+    height: auto;
+    width: 60%;
+    left: 50%;
+    margin-left: 20%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.middle1 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 9px;
+}
+
+.container1:hover .image1 {
+    opacity: 0.3;
+}
+
+.container1:hover .middle1 {
+    opacity: 1;
+}
+
+.text1 {
+    background-color: #03A9F4;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    border-radius: 9px;
+}
+
+.container2 {
+    margin-top: 5%;
+    position: relative;
+    width: 33%;
+}
+
+.image2 {
+    opacity: 1;
+    display: block;
+    width: 60%;
+    margin-left: 20%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    max-width: 565px;
+    height: auto;
+}
+
+
+.middle2 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 9px;
+}
+
+.container2:hover .image2 {
+    opacity: 0.3;
+}
+
+.container2:hover .middle2 {
+    opacity: 1;
+}
+
+.text2 {
+    background-color: #03A9F4;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+    border-radius: 9px;
+}
+
+.container3 {
+    position: relative;
+    margin-top: 5%;
+    width: 33%;
+}
+
+.container3:hover .image3 {
+    opacity: 0.3;
+}
+
+.image3 {
+    opacity: 1;
+    display: block;
+    width: 60%;
+    margin-left: 20%;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    max-width: 565px;
+    height: auto;
+    background-color: #C5C5C5;
+}
+
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.secSidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+    width: 0;
+    left: 20%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+
+/* The navigation menu links */
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.secSidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.level1 {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    width: 20%;
+}
+
+.level2 {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    width: 20%;
+}
+
+
+.level1:hover,
+.level1:focus {
+    color: #f1f1f1;
+}
+
+.level2:hover,
+.level2:focus {
+    color: #f1f1f1;
+}
+
+
+
+
+
+
+/* When you mouse over the navigation links, change their color */
+
+.sidenav a:hover,
+.offcanvas a:focus {
+    color: #f1f1f1;
+}
+
+.secSidenav a:hover,
+.offcanvas a:focus {
+    color: #f1f1f1;
+}
+
+
+
+
+
+
+/* Position and style the close button (top right corner) */
+
+.closebtn1 {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+
+.closebtn2 {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.close1 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    margin-right: 25%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    right: 0;
+    width: 5%;
+    text-decoration: none;
+    font-size: 4vw;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.container1:hover .close1 {
+    opacity: 1;
+}
+
+.close2 {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 10%;
+    margin-right: 25%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: white;
+    right: 0;
+    width: 5%;
+    text-decoration: none;
+    font-size: 4vw;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.container2:hover .close2 {
+    opacity: 1;
+}

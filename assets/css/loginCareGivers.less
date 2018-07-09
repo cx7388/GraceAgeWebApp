@@ -1,0 +1,247 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+
+/* 
+    Created on : Nov 1, 2017, 8:58:36 PM
+    Author     : River
+*/
+
+.layout(@direction) {
+    display: flex;
+    flex-direction: @direction;
+}
+
+.left {
+    float: left;
+    color: white;
+}
+
+.right {
+    float: right;
+}
+
+.room {
+    width: 100%;
+    text-align: center;
+    color: white
+}
+
+body {
+    .layout(column);
+}
+
+header {
+    margin-top: 2px;
+    max-height: 115px;
+    height: 100%;
+    padding: 0px;
+    .layout(row);
+
+    font-family: 'PT sans', sans-serif;
+}
+
+main {
+    max-height: 700px;
+    height: 100%;
+    .layout(row);
+    font-family: 'Optima';
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+}
+
+.title {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    text-shadow: 2px 2px #000;
+    color: #FFF;
+}
+
+#container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+img {
+    height: 300px;
+}
+
+#overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    color: rgba(188, 143, 143, 0.2);
+    font-size: 50px;
+    text-align: center;
+    line-height: 100px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    color: white;
+    border-radius: 25px;
+}
+
+.login {
+
+    position: absolute;
+    top: calc(0%);
+    left: calc(0%);
+    max-height: 300px;
+    max-width: 700px;
+    padding: 10px;
+    z-index: 2;
+    height: auto;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.login input[type=text] {
+    max-width: 750px;
+    max-height: 90px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background: rgba(200, 200, 200, 0.5);
+    border-radius: 2px;
+    font-family: 'Pontano Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    padding: 4px;
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.login input[type=password] {
+    max-width: 750px;
+    max-height: 90px;
+    background: rgba(200, 200, 200, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 2px;
+    color: #fff;
+    font-family: 'Pontano Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    padding: 4px;
+    margin-top: 10px;
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.check{
+    max-width: 750px;
+    max-height: 90px;
+    background: rgba(200, 200, 200, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 2px;
+    color: #fff;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 2vw;
+    font-weight: 400;
+    padding: 4px;
+    margin-top: 10px;
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    color: crimson;
+    opacity: 1;
+}
+
+.login input[type=submit] {
+    max-width: 750px;
+    max-height: 90px;
+    background: #03A9F4;
+    border: 1px solid #03A9F4;
+    cursor: pointer;
+    border-radius: 2px;
+    color: white;
+    opacity: 0.9;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    padding: 6px;
+    margin-top: 10px;
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.login input[type=submit]:hover {
+    opacity: 0.8;
+}
+
+.login input[type=submit]:active {
+    opacity: 0.6;
+}
+
+.login input[type=text]:focus {
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+.login input[type=password]:focus {
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.9);
+}
+
+.login input[type=submit]:focus {
+    outline: none;
+}
+
+::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+::-moz-input-placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.box {
+    position: relative;
+    margin: auto;
+    width: 50%;
+    margin-top: 15%;
+    box-sizing: border-box;
+    background: rgba(200, 200, 200, 0.5);
+}
+
+
+
+
+/* The navigation bar */
+
+.navbar {
+    overflow: hidden;
+    background-color: #03A9F4;
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
+    opacity: 0.9;
+}
+
+
+
+
+/* Links inside the navbar */
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+}
+
+.headerfont {
+    font-size: 1.5vw;
+}

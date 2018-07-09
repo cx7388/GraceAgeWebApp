@@ -1,0 +1,51 @@
+
+
+.album-cover{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    
+    width: 100%;
+}
+
+.caption h3{
+    font-size: 2em;
+    font-family: 'PT sans', sans-serif;
+}
+
+
+
+
+
+.hide-bullets {
+    list-style:none;
+    margin-left: -40px;
+    margin-top:20px;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    width: 100%;
+}
+
+.small{
+    width:40vw !important;
+    height:12vh !important;
+   
+    
+}
+.hide-bullets{
+    margin:0;
+}
+.small-li{
+    margin-top:2vh;
+    margin-bottom: 0;
+    width:40vw !important;
+    height:20vh !important;
+}
+.big{
+    width:70vw !important;
+    height:70vh !important;
+}

@@ -1,0 +1,42 @@
+
+
+
+
+.hide-bullets {
+    list-style:none;
+    margin-left: -40px;
+    margin-top:20px;
+}
+
+.thumbnail {
+    padding: 0;
+}
+
+.carousel-inner>.item>img, .carousel-inner>.item>a>img {
+    width: 100%;
+}
+
+.small{
+    width:20vw !important;
+    height:12vh !important;
+   
+    
+}
+.hide-bullets{
+    margin:0;
+    height:100%;
+    max-width:100%;
+    overflow-x: scroll;
+    display: flex;
+    flex-direction: row;
+}
+.small-li{
+    margin-top:2vh;
+    margin-bottom: 0;
+    width:10vw !important;
+    height:20vh !important;
+}
+.big{
+    width:70vw !important;
+    height:70vh !important;
+}
